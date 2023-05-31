@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba();
+    color: white;
+}
+body{
+    background-color: rgb(2,0, 36);
+    background: linear-gradient(90deg,rgba(2,0,36,1)0%, rgba(67,67,162, 1)47%, rgba(0,212, 255, 1));
+}
+nav{
+    display: flex;
+    align-items: center;
+
+}
+nav img{
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0px 0px 30px rgb(2,0, 36);
+}
+nav h1{
+    color: white;
+    font-size: 20px;
+    
+}
+/*-------------------- Header----------------------------------- */
+
+header{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+}
+.header-content h2{
+    font-size: 50px;
+    color: white;
+}
+.header-img img{
+    height: 400px;
+    opacity: .7;
+    border-radius: 30% 70% 76% 24%/70% 30% 70% 30%;
+    animation: movimento 12s infinite alternate;
+
+}
+
+@keyframes movimento{
+    0%, 100%{
+        border-radius: 32% 74% 72% 20%/66% 28% 73% 35%;
+        box-shadow: 0px 0px 100px white;
+        
+    }25%{
+        border-radius: 38% 65% 72% 35%/70% 24% 78% 37%;
+        box-shadow: 0px 0px 200px white;
+    }50%{
+        border-radius: 35% 74% 78% 26%/68% 32% 77% 36%;
+        box-shadow: 0px 0px 100px white;
+    }75%{
+        border-radius: 38% 77% 75% 20%/66% 30% 71% 38%;
+        box-shadow: 0px 0px 200px white;
+    }
+}
+/* ------------------------Section--------------------- */
+section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+
+}
+.apresentacao{
+    display: flex;
+    align-items: center;
+    
+}
+.conte-conosco{
+    width: 40%;
+}
+.conte-conosco h3{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.conte-conosco img{
+    height: 70%;
+    width: 100%;
+    border-radius:60% 43% 40% 57% / 58% 80% 10% 60%;
+    margin-top: 40px;
+}
+.filosofia{
+    width: 60%;
+
+}
+.filosofia p{
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0 25px;
+}
+.barra{
+    height: 1px;
+    background-color: white;
+    width: 80%;
+    margin: 100px auto;
+}
+.produtos h3{
+    color: white;
+    font-size: 30px;
+    padding: 10px 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+}
+.produtos p{
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+.produtos .banners{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.banner{
+    
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.banner p{
+    color: #3d3d97;
+    font: 16px;
+    margin: 33px 0;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+.banner input{
+    background-color: #3d3d97;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: 10px 10px 10 rgba(0, 0, 0, 0.274);
+}
+.banner input:hover{
+    background-color: #26266d;
+}
+.projetos{
+    margin: 100px 0;
+
+
+}
+.projetos h3{
+    font-size: 30px;
+}
+.banners-projetos{
+    display: flex;
+    justify-content: space-around;
+}
+.banner-projeto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+.banner-projeto img{
+    width: 100%;
+    margin: 50px auto;
+}
+footer{
+    width: 80%;
+    margin: 50px auto;
+}
+footer a{
+    text-decoration: none;
+}
+footer h4{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.contatos p{
+    font-size: 18px;
+    margin: 10px;
+}
+.formulario{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: rgb(2,0, 36);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formulario a{
+    text-decoration: none;
+
+}
+.formulario ion-icon{
+    margin: 0 auto;
+
+}
+.formulario:hover{
+    background-color: rgb(31, 25, 146);
+    transition: 0.5s;
+}
+.formulario-fixo{
+    display: none;
+}
+@media screen and (max-width: 390px) {
+    nav h1{
+        font-size: 16px;
+    }
+    header{
+        width: 90%;
+        flex-direction: column;
+    }
+    .header-content h2{
+        font-size: 30px;
+        z-index: 1;
+        
+    }
+    .header-img img{
+        height: 250px;
+        position: absolute;
+        top: 70px;
+        right: 50px;
+        opacity: .8;
+
+    }
+    section{
+        width: 90%;
+    }
+    .apresentacao{
+        flex-direction: column;
+    }
+    .conte-conosco{
+        width: 100%;
+    }
+    .conte-conosco h3{
+        font-size: 20px;
+    }
+    .conte-conosco img{
+        display: none;
+    }
+    .filosofia{
+        width: 90%;
+    }
+    .filosofia p{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        line-height: 30px;
+        
+    }
+    .produtos h3{
+        font-size: 20px;
+    }
+    .produtos p{
+        font-size: 16px;
+        text-align: justify;
+    }
+    .produtos .banners{
+        display: block;
+     
+    }
+    .banner{
+        width: 70%;
+        margin: 20px auto;
+    }
+    .banner p{
+        font-size: 20px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .projetos h3{
+        font-size: 30px;
+        line-height: 35px;
+        
+    }
+    .banners-projetos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-projeto{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .banner-projeto img{
+        margin: 10px;
+    }
+    .formulario{
+        display: none;
+        
+    }
+}
